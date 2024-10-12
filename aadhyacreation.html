@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhya Creation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.5s;
+        }
+
+        header.scrolled {
+            background-color: #388E3C;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        section {
+            padding: 50px;
+            margin: 20px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s forwards;
+        }
+
+        section:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #388E3C;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Aadhya Creation</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Aadhya Creation specializes in high-quality textiles and innovative needle looms. Our mission is to provide exquisite fabric solutions for various industries. With a commitment to quality and sustainability, we strive to be a leader in the textile industry.</p>
+    </section>
+
+    <section class="features">
+        <h3>Features of Our Needle Looms</h3>
+        <ul>
+            <li><strong>High Efficiency:</strong> Designed for optimal production speed.</li>
+            <li><strong>Versatility:</strong> Suitable for various fabrics and designs.</li>
+            <li><strong>Precision Engineering:</strong> Ensures consistent quality in every weave.</li>
+            <li><strong>Durability:</strong> Built to withstand heavy usage and provide longevity.</li>
+            <li><strong>Easy Operation:</strong> User-friendly controls for seamless operation.</li>
+        </ul>
+    </section>
+ 
+   <section id="products">
+        <h4>Our Products</h4>
+        <ul>
+            <li>Maharani Laces</li>
+            <li>Custom Textile Solutions</li>
+            <li>Eco-Friendly Fabrics</li>
+            <li>Various Designs</li>
+            <li>Fancy Laces>
+      </ul>
+    </section>
+    <section class="features">
+
+    <section id="contact">
+        <h5>Contact Us</h5>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aadhya Creation. All rights reserved.</p>
+        <p>Contact Us:aadhyacreation192@gmail.com | Phone:8401034112,9725353703
+    </footer>
+
+    <script>
+        // Change header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
